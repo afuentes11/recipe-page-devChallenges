@@ -1,0 +1,242 @@
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --gray-light: #BDBDBD;
+    --gray: #4f4f4f;
+    --gray-dark: #333333;
+    --orange: #F2994A;
+    --primary-font: 'Playfair Display', serif;
+    --secondary-font: 'Montserrat', sans-serif;
+}
+
+.body{
+    max-width: 960px;
+    margin: 3rem auto 0;
+    padding: 0 0.7rem;
+}
+
+.header{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+}
+
+.header > .title{
+    font-family: var(--primary-font);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+    display: inline-block;
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+.header > .description-container{
+    display: flex;
+    gap: 0.6rem;
+    justify-content: start;
+    align-items: flex-start;
+    max-width: 700px;
+}
+
+.description-container > .description-icon{
+    margin-top: 0.25rem;
+}
+
+.description-container > .description-text{
+    font-family: var(--secondary-font);
+    color: var(--gray);
+    font-style: italic;
+    font-size: 0.9;
+    font-weight: 500;
+    line-height: 1rem;
+    text-transform: initial;
+}
+
+.main{
+    width: 100%;
+}
+
+.main > .img{
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.main > .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.content > .content-items{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    max-width: 36rem;
+}
+
+.content-items > .ingredients, .instructions{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+}
+
+.ingredients-title, .instructions-title{
+    color: var(--gray-dark);
+    text-transform: initial;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.ingredients > .dish-component{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+}
+
+.dish-component-title{
+    font-family: var(--primary-font);
+    color: var(--gray-dark);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-transform: capitalize;
+}
+
+.dish-component-checkbox{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+}
+
+.checkbox-label{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--gray-dark);
+    text-transform: initial;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 0.5rem;
+    text-align: justify;
+}
+
+strong.strong{
+    font-weight: 500;
+    font-weight: 700;
+    line-height: 0.9rem;
+}
+
+strong.italic{
+    font-style: italic;
+}
+
+.checkbox{
+    margin-top: 0.4rem;
+}
+
+.instructions-content{
+    display: grid;
+    grid-template-columns: 2.2rem auto;
+    grid-column-gap: 1rem;
+}
+
+.instructions-content > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.2rem;
+    background-color:var(--orange);
+    border-radius: 6px;
+}
+
+.instructions-number{
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    display: flex;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.instructions-description{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    color: var(--black);
+    text-align: justify;
+}
+
+.content-items  .link{
+    font-family: var(--secondary-font);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2rem;
+    color: var(--gray-light);
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.content > .content-time{
+    padding: 3.5rem 2.5rem;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2.5rem;
+}
+
+.content-time > .times{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2.5rem;
+}
+
+.time-layout{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 1rem
+}
+
+.time-text{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.time-title{
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 0.6rem;
+    line-height: 0.875rem;
+    text-transform: uppercase;
+    color: var(--gray-light);
+}
+
+
+.time-description{
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    color: var(--gray-dark);
+}
+
+
+
+.material-symbols-rounded { 
+    color: var(--gray);
+}
+
+
+.color-orange{
+    color: #F2994A;
+}
